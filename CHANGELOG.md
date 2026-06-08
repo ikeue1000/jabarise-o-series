@@ -34,3 +34,11 @@
 
 - [FIX] README.mdの技術構成を「未定」から「ConoHa VPS・PostgreSQL前提」に修正
 - [FIX] MANUS_PROGRESS.mdのフェーズ0未着手一覧を「指示書0作成→DBスキーマ設計」の順に修正
+
+## 2026年6月9日（追記3）
+
+- [DECISION] 指示書0：共通DB基盤構築指示書 v0.3 を池上確認OKとして確定
+- [ADD] フェーズ0 SQL v0.6 を sql フォルダに追加
+- [UPDATE] MANUS_PROGRESS.md をSQL実行前の状態に更新
+- [UPDATE] MANUS_TODO.md をSQL実行前タスクに差し替え
+- [FIX] MANUS_HANDOFF.md からPublic公開に不適切なVPS IPアドレスを削除
