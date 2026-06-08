@@ -29,3 +29,8 @@
 - [ADD] MANUS_HANDOFFに技術前提を追加（ConoHa VPS 4GB・PostgreSQL）
 - [DECISION] DBはConoHa VPS上のPostgreSQLで確定。サーバー操作は池上指示のもとで実施
 - [DECISION] Manusへの最初の指示は「指示書0作成のみ」。実装着手は指示書0確認後
+
+## 2026年6月9日（追記2）
+
+- [FIX] README.mdの技術構成を「未定」から「ConoHa VPS・PostgreSQL前提」に修正
+- [FIX] MANUS_PROGRESS.mdのフェーズ0未着手一覧を「指示書0作成→DBスキーマ設計」の順に修正
