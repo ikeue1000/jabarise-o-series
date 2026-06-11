@@ -30,15 +30,18 @@
 - [DECISION] DBはConoHa VPS上のPostgreSQLで確定。サーバー操作は池上指示のもとで実施
 - [DECISION] Manusへの最初の指示は「指示書0作成のみ」。実装着手は指示書0確認後
 
-## 2026年6月9日（追記2）
+---
 
-- [FIX] README.mdの技術構成を「未定」から「ConoHa VPS・PostgreSQL前提」に修正
-- [FIX] MANUS_PROGRESS.mdのフェーズ0未着手一覧を「指示書0作成→DBスキーマ設計」の順に修正
-
-## 2026年6月9日（追記3）
+## 2026年6月12日
 
 - [DECISION] 指示書0：共通DB基盤構築指示書 v0.3 を池上確認OKとして確定
-- [ADD] フェーズ0 SQL v0.6 を sql フォルダに追加
-- [UPDATE] MANUS_PROGRESS.md をSQL実行前の状態に更新
-- [UPDATE] MANUS_TODO.md をSQL実行前タスクに差し替え
-- [FIX] MANUS_HANDOFF.md からPublic公開に不適切なVPS IPアドレスを削除
+- [ADD] フェーズ0実装用SQLファイル5本作成（01_create_tables〜05_verify_phase0）
+- [ADD] VPS_SETUP_GUIDE.md 作成（PostgreSQL準備・DB作成手順書）
+- [ADD] ConoHa VPS jabarise-o-series-db 上に PostgreSQL 16.14 インストール・起動確認
+- [ADD] DBロール jabarise_user 作成（superuser: No）
+- [ADD] 空DB jabarise_db 作成・\dt 空確認（Did not find any relations.）
+- [ADD] フェーズ0 SQL実行完了（01〜04）・05_verify_phase0 全項目OK（池上確認済み）
+- [FIX] MANUS_HANDOFF.md の VPS IP を 160.251.203.233 → 160.251.233.123 に修正
+- [UPDATE] MANUS_HANDOFF.md 技術前提を実績値に更新（PostgreSQL 16.14・接続コマンド・SQLファイル設置場所）
+- [UPDATE] MANUS_PROGRESS.md をフェーズ0実装完了に更新
+- [UPDATE] MANUS_TODO.md からフェーズ0 SQL実行タスクを削除・フェーズ1タスクに更新

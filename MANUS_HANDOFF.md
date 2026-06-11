@@ -1,7 +1,7 @@
 # MANUS_HANDOFF.md
 # Manus引継ぎ書｜毎セッション冒頭に必ず読むこと
 
-最終更新：2026年6月9日
+最終更新：2026年6月12日
 
 ---
 
@@ -122,14 +122,14 @@
 
 | 項目 | 内容 |
 |---|---|
-| サーバー | ConoHa VPS（4GB） |
-| DB | PostgreSQL（VPS上に構築） |
-| 確認事項 | 実装前に必ず池上に技術構成を確認すること |
+| サーバー | ConoHa VPS（jabarise-o-series-db）IP: 160.251.233.123 |
+| DB | PostgreSQL 16.14 / DB名: jabarise_db |
+| DBユーザー | jabarise_user（superuser: No） |
+| SQLファイル設置場所 | /root/jabarise_phase0_sql |
+| 接続コマンド | `psql -U jabarise_user -h localhost -d jabarise_db` |
+| フェーズ0 | 2026年6月12日 SQL実行完了・全項目OK確認済み |
 
-※IPアドレス・接続情報・パスワード・環境変数はGitHubに記載しない。別途、池上管理とする。
-
-PostgreSQLのインストール・設定はフェーズ0着手時に池上指示のもとで行う。
-勝手にインストール・設定変更・サーバー操作をしない。
+勝手にサーバー操作・設定変更・SQLの追加実行をしない。実施する場合は必ず池上指示のもとで行う。
 
 ---
 
