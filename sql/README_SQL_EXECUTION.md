@@ -49,12 +49,12 @@
 ## 実行コマンド例（psqlを使用する場合）
 
 ```bash
-# データベースへの接続と実行（ユーザー名、DB名は環境に合わせて変更してください）
-psql -U postgres -d jabarise_db -f 01_create_tables.sql
-psql -U postgres -d jabarise_db -f 02_insert_initial_data.sql
-psql -U postgres -d jabarise_db -f 03_constraints_and_indexes.sql
-psql -U postgres -d jabarise_db -f 04_audit_log_protection.sql
+# 接続ユーザーは jabarise_user に統一すること
+psql -U jabarise_user -h localhost -d jabarise_db -f 01_create_tables.sql
+psql -U jabarise_user -h localhost -d jabarise_db -f 02_insert_initial_data.sql
+psql -U jabarise_user -h localhost -d jabarise_db -f 03_constraints_and_indexes.sql
+psql -U jabarise_user -h localhost -d jabarise_db -f 04_audit_log_protection.sql
 
 # 01～04の実行完了後に実行（全項目 OK であることを確認する）
-psql -U postgres -d jabarise_db -f 05_verify_phase0.sql
+psql -U jabarise_user -h localhost -d jabarise_db -f 05_verify_phase0.sql
 ```
